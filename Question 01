@@ -1,0 +1,12 @@
+int LCM(int , int);
+
+// function to calculate LCM of two numbers. (TSRS)
+
+int LCM(int a , int b)
+{
+    for (int i=(a>b?a:b) ; i<=(a*b) ; i++) 
+    {
+        if(i%a==0 && i%b==0)
+        return i ;
+    }
+}
